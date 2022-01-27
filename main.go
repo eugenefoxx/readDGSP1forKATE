@@ -15,6 +15,7 @@ import (
 	"github.com/eugenefoxx/readDGSP1forKATE/recipesap"
 	"github.com/eugenefoxx/readDGSP1forKATE/setting"
 	"github.com/fatih/color"
+	"github.com/skratchdot/open-golang/open"
 	"gopkg.in/ini.v1"
 )
 
@@ -1147,7 +1148,7 @@ func main() {
 	duration := time.Since(start)
 	fmt.Println("Время работы - ", duration)
 	//open.RunWith("/home/a20272/Code/github.com/eugenefoxx/readDGS/files/Рецепт для SAP.csv", "soffice")
-	//open.RunWith(setting.Conf.Files+"recipte.csv", "soffice")
+	open.RunWith(setting.Conf.Files+"recipte.csv", "soffice")
 
 }
 
