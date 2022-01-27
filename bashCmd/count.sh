@@ -1,0 +1,3 @@
+#!/bin/bash
+#awk 'BEGIN {FS = OFS = " "} {s[$6] += 1} END {for (key in s) {print key, s[key]}}' /home/a20272/Code/github.com/eugenefoxx/readDGS/files/datpatternData > /home/a20272/Code/github.com/eugenefoxx/readDGS/files/outdatpatternData
+awk 'BEGIN {FS = OFS = " "} {s[$6] += 1} END {for (key in s) {print key, s[key]}}' /home/a20272/Code/github.com/eugenefoxx/SQLPanaCIMPobedit1/internal/source/datpatternData > /home/a20272/Code/github.com/eugenefoxx/SQLPanaCIMPobedit1/internal/source/outdatpatternData
