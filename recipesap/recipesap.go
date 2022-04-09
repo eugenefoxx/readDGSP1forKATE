@@ -106,6 +106,7 @@ func MakeRecipeSAP(file1 string, file2 string, npm string) {
 	csvdatafile, err := os.Create(setting.Conf.Files + "recipte.csv")
 	if err != nil {
 		fmt.Println(err)
+		
 	}
 	defer csvdatafile.Close()
 
